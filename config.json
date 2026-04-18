@@ -1,0 +1,8 @@
+{
+  "locations": [
+    {"name": "Banja Luka", "lat": 44.7722, "lon": 17.1910, "radius_km": 40},
+    {"name": "Prnjavor",   "lat": 44.8686, "lon": 17.6608, "radius_km": 40},
+    {"name": "Novi Sad",   "lat": 45.2671, "lon": 19.8335, "radius_km": 40},
+    {"name": "Beograd",    "lat": 44.8176, "lon": 20.4569, "radius_km": 40}
+  ]
+}
