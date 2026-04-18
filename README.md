@@ -93,32 +93,6 @@ Inside `process_strike()` there is a marked place where you can add code that ru
 #   distance_km  — distance from the location center in kilometers
 ```
 
-## Running as a systemd service (Linux)
-
-Create `/etc/systemd/system/lightning.service`:
-
-```ini
-[Unit]
-Description=Lightning Detector
-After=network.target
-
-[Service]
-User=david
-WorkingDirectory=/home/david/lightning
-ExecStart=/home/david/lightning/venv/bin/python lightning_detector.py
-Restart=always
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-```
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable lightning
-sudo systemctl start lightning
-```
-
 ## Note
 
 Blitzortung/LightningMaps publicly states that access to their live WebSocket servers is limited and should not be used for commercial or high-frequency workloads.
